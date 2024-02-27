@@ -1,1 +1,1 @@
-# mobile_programming
+모바일 프로그래밍 (23년 2학기)
