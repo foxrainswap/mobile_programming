@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D3E4F1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Water Tracker"
+        android:layout_marginBottom="60dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="물 하루 섭취량:       ml" />
+
+    <TextView
+        android:id="@+id/textViewCaffeine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWater"
+        android:textSize="18sp"
+        android:layout_marginBottom="50dp"
+        android:text="카페인 하루 섭취량:      mg" />
+
+    <EditText
+        android:id="@+id/editTextWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCaffeine"
+        android:layout_marginTop="16dp"
+        android:hint="물 ml" />
+
+    <Button
+        android:id="@+id/btnInputWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWater"
+        android:layout_marginTop="16dp"
+        android:text="입력" />
+
+    <EditText
+        android:id="@+id/editTextCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInputWater"
+        android:layout_marginTop="16dp"
+        android:hint="커피 잔" />
+
+    <Button
+        android:id="@+id/btnInputCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCoffee"
+        android:layout_marginTop="16dp"
+        android:text="입력" />
+
+    <TextView
+        android:id="@+id/textViewWaterGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInputCoffee"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="물 섭취 목표:          ml" />
+
+    <TextView
+        android:id="@+id/textViewCaffeineLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewWaterGoal"
+        android:text="카페인 제한 목표:           mg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCaffeineLimit"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Setting" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+    </LinearLayout>
+
+
+</RelativeLayout>
